@@ -348,134 +348,11 @@
   }
 }
 
-/* Services Section */
-.services {
-  background: #131313;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
-.services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(
-    to right,
-    #ff8177 0%,
-    #ff867a 0%,
-    #ff8c7f 21%,
-    #f99185 52%,
-    #cf556c 78%,
-    #b12a5b 100%
-  );
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  margin-bottom: 5rem;
-  font-size: 2.5rem;
-}
-
-.services__container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.services__card {
-  margin: 1rem;
-  height: 525px;
-  width: 400px;
-  border-radius: 4px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.6) 100%
-    ),
-    url("/images/pic3.jpg");
-  background-size: cover;
-  position: relative;
-  color: #fff;
-}
-
-.services__card:before {
-  opacity: 0.2;
-}
-
-.services__card:nth-child(2) {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url("/images/pic4.jpg");
-}
-
-.services__card h2 {
-  position: absolute;
-  top: 350px;
-  left: 30px;
-}
-
-.services__card p {
-  position: absolute;
-  top: 400px;
-  left: 30px;
-}
-
-.services__card button {
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #f77062;
-  position: absolute;
-  top: 440px;
-  left: 30px;
-  font-size: 1rem;
-}
-
-.services__card button:hover {
-  cursor: pointer;
-}
-
-.services__card:hover {
-  transform: scale(1.075);
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 960px) {
-  .services {
-    height: 1600px;
-  }
-
-  .services h1 {
-    font-size: 2rem;
-    margin-top: 12rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .services {
-    height: 1400px;
-  }
-
-  .services h1 {
-    font-size: 1.2rem;
-  }
-
-  .services__card {
-    width: 300px;
-  }
-}
 
 /* Footer CSS */
 .footer__container {
-  background-color: #141414;
+
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -683,7 +560,6 @@
 }
 
 .services {
-  background-color: #fff;
   margin: 100px auto;
   max-width: 850px;
 }
@@ -713,8 +589,7 @@
 
 .service {
   color: #4e51bb;
-  background-color: #f8f8f8;
-  text-align: center;
+    text-align: center;
   padding: 30px;
   position: relative;
 }
@@ -813,4 +688,48 @@ product section */
   margin: 20px;
   width: 200px
   margin-bottom: 20px;
+}
+
+/* blog section */
+.blog-section {
+  margin-top: 60px;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #f2f2f2; /* Set light grey background color */
+}
+
+.blog-articles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.blog-article {
+  flex-basis: calc(30% - 1rem); /* Make the flexbox smaller */
+  margin-bottom: 2rem;
+  text-align: left;
+  border: 1px solid #ddd; /* Add white border box */
+  padding: 1rem; /* Add padding to the border box */
+  background-color: #fff; /* Set white background color */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.blog-article img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .blog-article {
+    flex-basis: calc(50% - 1rem); /* Make the flexbox articles 50% width */
+  }
+}
+
+/* Media query for screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  .blog-article {
+    flex-basis: 100%; /* Make the flexbox articles 100% width */
+  }
 }
