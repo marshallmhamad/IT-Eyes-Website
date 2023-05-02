@@ -448,6 +448,12 @@
   margin-bottom: 16px;
 }
 
+#logo {
+  margin-top: 15px;
+  float: left;
+  display: inline-block;
+}
+
 .website__rights {
   color: #fff;
 }
